@@ -1054,11 +1054,12 @@ footer .copyright a {
 .menu li.search-bar:after {
   position: absolute;
   top: -2px;
-  left: 36px;
-  content: "SEARCH";
+  left: 45px;
+  content: "搜索";
   font-size: 0.8rem;
   opacity: 0.8;
   font-weight: 700;
+  letter-spacing: 0.5rem;
 }
 .menu a {
   color: #666;

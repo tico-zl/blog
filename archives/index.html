@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="cn" class="loading">
+<html lang="zh-CN" class="loading">
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -13,7 +13,7 @@
     
     <meta name="author" content="tico"> 
     <link rel="alternative" href="atom.xml" title="tico_zl" type="application/atom+xml"> 
-    <link rel="icon" href="/liuzl/img/favicon.png"> 
+    <link rel="icon" href="/liuzl/liuzl/img/favicon.png"> 
     <link href="https://fonts.loli.net/css?family=Roboto+Mono|Rubik&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="//at.alicdn.com/t/font_1429596_nzgqgvnmkjb.css">
     <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.7.2/animate.min.css">
@@ -45,8 +45,8 @@
             <div class="main">
                 <div class="content animated fadeIn">
                     <div class="set">
-                        <h1 style="text-align: center">Archived</h1>
-                        <p style="text-align: center">「 1 」</p>
+                        <h1 style="text-align: center">归档</h1>
+                        <p style="text-align: center">「 3 」</p>
                         <ul class="timeline timeline-centered">
                             
                             
@@ -55,20 +55,66 @@
                                     <div class="timeline-info"></div>
                                     <div class="timeline-marker"></div>
                                     <div class="timeline-content">
-                                        <h2 class="timeline-title">November 2019</h2>
+                                        <h2 class="timeline-title">十一月 2019</h2>
                                     </div>
                                 </li>
                                 
                                 <li class="timeline-item">
                                     <div class="timeline-info">
-                                        <span class="gradient-text">November 22, 2019</span>
+                                        <span class="gradient-text">十一月 25, 2019</span>
                                     </div>
                                     <div class="timeline-marker"></div>
                                     <div class="timeline-content">
-                                        <a class="timeline-title" target="_self" href="/liuzl/2019/11/22/hello-world/">Hello World</a>
+                                        <a class="timeline-title" target="_self" href="/liuzl/2019/11/25/git/Git-%E5%B0%86%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE%E6%8E%A8%E9%80%81%E5%88%B0%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/">Git~将本地项目推送到远程仓库</a>
                                         <p>
-                                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Qu...
+                                            Git~将本地项目推送到远程仓库0、前言
+如果应经有远程仓库和本地仓库，那么本地仓库和远程仓库实际上是独立的两个仓库，这个时候就需要将两个仓库的历史进行合并后再push。
+1、进入本地项目目录，将当前目录初始化gitgit init
+2、添加远程仓库地址git remote add origin https://gitee.com/tico-zl/arithmetic-leetcode.gi...
+                                        </p>
+                                    </div>
+                                </li>
+                            
+                                
+                                <li class="timeline-item">
+                                    <div class="timeline-info">
+                                        <span class="gradient-text">十一月 25, 2019</span>
+                                    </div>
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <a class="timeline-title" target="_self" href="/liuzl/2019/11/25/git/Git-%E6%A0%B9%E6%8D%AE%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93a%E7%9A%84tag-%E5%88%9B%E5%BB%BA%E5%88%86%E6%94%AFmaster-%E7%84%B6%E5%90%8E%E6%8E%A8%E5%88%B0%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93b/">Git~根据远程仓库a的tag,创建分支master,然后推到远程仓库b</a>
+                                        <p>
+                                            1、将仓库a的克隆下来
+git clone https://gitlab.tico.com/test/a.git
+2、更新获取tag
+# 切换到a项目目录
+cd a
+# 更新远程tag
+git fetch origin tag v1.0
+3、将tag 1.0v 创建为branch分支
+git branch master v1.0
+# 切换创建好的分支
+git ck master
+4、最后将a...
+                                        </p>
+                                    </div>
+                                </li>
+                            
+                                
+                                <li class="timeline-item">
+                                    <div class="timeline-info">
+                                        <span class="gradient-text">十一月 25, 2019</span>
+                                    </div>
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <a class="timeline-title" target="_self" href="/liuzl/2019/11/25/git/Git-%E5%9B%9E%E9%80%80%E5%88%B0%E6%9F%90%E4%B8%AA%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC/">Git~回退到某个历史版本</a>
+                                        <p>
+                                            只需要两个步骤：
+一、回退到某个版本命令
+git reset --hard 139dcfaa558e3276b30b6b2e5cbbb9c00bbdca96
+二、强制提交到branch-name分支(origin为远程服务器)
+git push -f -u origin branch-name
+
                                         </p>
                                     </div>
                                 </li>
@@ -276,7 +322,7 @@ Qu...
         var typedTextEl = $('.typed-text');
         if (typedTextEl && typedTextEl.length > 0) {
             var typed = new Typed('.typed-text', {
-                strings: ["Think like an artist, develop like an artisan", "艺术家思维去思考问题，工匠创造精神去开发"],
+                strings: ["I think, therefore I am                              ", "我思, 故我在                      "],
                 typeSpeed: 90,
                 loop: true,
                 loopCount: Infinity,
