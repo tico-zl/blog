@@ -5,14 +5,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>centos7开放及查看端口 - tico_zl</title>
+    <title>命令之alias添加ll - tico_zl</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="TriDiamond Obsidian,"> 
-    <meta name="description" content="端口操作的方法如下：1、开放端口firewall-cmd --zone=public --add-port=80/tcp --permanent返回success为成功
-
-命令含义：–zone #作,"> 
+    <meta name="description" content="Tico&#39;s blog,1、修改~/.bash_profile文件  vim ~/.bash_profile
+2、添加如下内容alias ll=&amp;#39;ls -alF&amp;#39;
+alias la=&amp;#39;ls -A&amp;#,"> 
     <meta name="author" content="tico"> 
     <link rel="alternative" href="atom.xml" title="tico_zl" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -45,7 +45,7 @@
     <div class="navigation animated fadeIn fast delay-1s">
         <img id="home-icon" class="icon-home" src="/img/favicon.png" alt="" data-url="http://blog.liuzl.cn">
         <div id="play-icon" title="Play/Pause" class="iconfont icon-play"></div>
-        <h3 class="subtitle">centos7开放及查看端口</h3>
+        <h3 class="subtitle">命令之alias添加ll</h3>
         <div class="social">
             <!--        <div class="like-icon">-->
             <!--            <a href="javascript:;" target="_blank" rel="noopener" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
@@ -70,7 +70,7 @@
             animation-duration: 1.2s;
             background-image: 
                 radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.65), #100e17),
-                url(/img/os/00001_linux.png);">
+                url(https://images.pexels.com/photos/2473183/pexels-photo-2473183.jpeg?cs=srgb&dl=black-macbook-pro-2473183.jpg&fm=jpg);">
         </div>
         <div class="else">
             <p class="animated fadeInDown">
@@ -78,22 +78,22 @@
                 <a href="/categories/操作系统"><b>「
                     </b>操作系统<b> 」</b></a>
                 
-                一月 26, 2018
+                十一月 26, 2019
             </p>
-            <h3 class="post-title animated fadeInDown"><a href="/2018/01/26/linux/centos7%E5%BC%80%E6%94%BE%E5%8F%8A%E6%9F%A5%E7%9C%8B%E7%AB%AF%E5%8F%A3/" title="centos7开放及查看端口" class="">centos7开放及查看端口</a>
+            <h3 class="post-title animated fadeInDown"><a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/macOS/mac/%E5%91%BD%E4%BB%A4%E4%B9%8Balias%E6%B7%BB%E5%8A%A0ll" title="命令之alias添加ll" class="">命令之alias添加ll</a>
             </h3>
             
             <p class="post-count animated fadeInDown">
                 
                 <span>
                     <b class="iconfont icon-text2"></b> <i>文章字数</i>
-                    1.7k
+                    637
                 </span>
                 
                 
                 <span>
                     <b class="iconfont icon-timer__s"></b> <i>阅读约需</i>
-                    2 mins.
+                    1 mins.
                 </span>
                 
                 
@@ -106,7 +106,7 @@
             </p>
             
             
-            <ul class="animated fadeInDown post-tags-list" itemprop="keywords"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/centos/" rel="tag">centos</a></li><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/centos7/" rel="tag">centos7</a></li><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/linux/" rel="tag">linux</a></li><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" rel="tag">操作系统</a></li></ul>
+            <ul class="animated fadeInDown post-tags-list" itemprop="keywords"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/catalina/" rel="tag">catalina</a></li><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/macOS/" rel="tag">macOS</a></li><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" rel="tag">操作系统</a></li></ul>
             
         </div>
     </div>
@@ -127,20 +127,12 @@
 <div class="article">
     <div class='main'>
         <div class="content markdown animated fadeIn">
-            <h2 id="端口操作的方法如下："><a href="#端口操作的方法如下：" class="headerlink" title="端口操作的方法如下："></a>端口操作的方法如下：</h2><h3 id="1、开放端口"><a href="#1、开放端口" class="headerlink" title="1、开放端口"></a>1、开放端口</h3><p><code>firewall-cmd --zone=public --add-port=80/tcp --permanent</code><br>返回success为成功</p>
-<blockquote>
-<p>命令含义：<br>–zone #作用域<br>–add-port=80/tcp #添加端口，格式为：端口/通讯协议<br>–permanent #永久生效</p>
-</blockquote>
-<h3 id="2、重新载入"><a href="#2、重新载入" class="headerlink" title="2、重新载入"></a>2、重新载入</h3><p><code>firewall-cmd --reload</code></p>
-<h3 id="3、查看"><a href="#3、查看" class="headerlink" title="3、查看"></a>3、查看</h3><p><code>firewall-cmd --zone= public --query-port=80/tcp</code></p>
-<h3 id="4、删除"><a href="#4、删除" class="headerlink" title="4、删除"></a>4、删除</h3><p><code>firewall-cmd --zone= public --remove-port=80/tcp --permanent</code></p>
-<h2 id="重启防火墙："><a href="#重启防火墙：" class="headerlink" title="重启防火墙："></a>重启防火墙：</h2><p><code>systemctl restart firewalld.service</code></p>
-<h2 id="关闭防火墙："><a href="#关闭防火墙：" class="headerlink" title="关闭防火墙："></a>关闭防火墙：</h2><p><code>systemctl stop firewalld.service</code></p>
-<h2 id="查看监听-Listen-的端口"><a href="#查看监听-Listen-的端口" class="headerlink" title="查看监听(Listen)的端口"></a>查看监听(Listen)的端口</h2><p><code>netstat -lntp</code></p>
-<h2 id="检查端口被哪个进程占用"><a href="#检查端口被哪个进程占用" class="headerlink" title="检查端口被哪个进程占用"></a>检查端口被哪个进程占用</h2><p><code>netstat -lnp|grep 8080</code></p>
-<h2 id="查看状态"><a href="#查看状态" class="headerlink" title="查看状态"></a>查看状态</h2><p><code>systemctl status firewalld</code> </p>
-<h2 id="开机禁用-启用"><a href="#开机禁用-启用" class="headerlink" title="开机禁用/启用"></a>开机禁用/启用</h2><p><code>systemctl disable/enable firewalld</code></p>
-
+            <h1 id="1、修改-bash-profile文件"><a href="#1、修改-bash-profile文件" class="headerlink" title="1、修改~/.bash_profile文件"></a>1、修改~/.bash_profile文件</h1><pre><code class="bash">  vim ~/.bash_profile</code></pre>
+<h1 id="2、添加如下内容"><a href="#2、添加如下内容" class="headerlink" title="2、添加如下内容"></a>2、添加如下内容</h1><pre><code class="bash">alias ll=&#39;ls -alF&#39;
+alias la=&#39;ls -A&#39;
+alias l=&#39;ls -CF&#39;</code></pre>
+<h1 id="3、重新加载资源"><a href="#3、重新加载资源" class="headerlink" title="3、重新加载资源"></a>3、重新加载资源</h1><pre><code class="bash">source ~/.bash_profile</code></pre>
+<h1 id="4、OVER"><a href="#4、OVER" class="headerlink" title="4、OVER"></a>4、OVER</h1>
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls"
                 data-autoplay="false">
@@ -190,7 +182,7 @@
             <div class="box sticky animated fadeInRight faster">
                 <div id="toc" class="subbox">
                     <h4>目录</h4>
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#端口操作的方法如下："><span class="toc-number">1.</span> <span class="toc-text">端口操作的方法如下：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1、开放端口"><span class="toc-number">1.1.</span> <span class="toc-text">1、开放端口</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2、重新载入"><span class="toc-number">1.2.</span> <span class="toc-text">2、重新载入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3、查看"><span class="toc-number">1.3.</span> <span class="toc-text">3、查看</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4、删除"><span class="toc-number">1.4.</span> <span class="toc-text">4、删除</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#重启防火墙："><span class="toc-number">2.</span> <span class="toc-text">重启防火墙：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#关闭防火墙："><span class="toc-number">3.</span> <span class="toc-text">关闭防火墙：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#查看监听-Listen-的端口"><span class="toc-number">4.</span> <span class="toc-text">查看监听(Listen)的端口</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#检查端口被哪个进程占用"><span class="toc-number">5.</span> <span class="toc-text">检查端口被哪个进程占用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#查看状态"><span class="toc-number">6.</span> <span class="toc-text">查看状态</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#开机禁用-启用"><span class="toc-number">7.</span> <span class="toc-text">开机禁用/启用</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1、修改-bash-profile文件"><span class="toc-number">1.</span> <span class="toc-text">1、修改~/.bash_profile文件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2、添加如下内容"><span class="toc-number">2.</span> <span class="toc-text">2、添加如下内容</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3、重新加载资源"><span class="toc-number">3.</span> <span class="toc-text">3、重新加载资源</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4、OVER"><span class="toc-number">4.</span> <span class="toc-text">4、OVER</span></a></li></ol>
                 </div>
             </div>
             

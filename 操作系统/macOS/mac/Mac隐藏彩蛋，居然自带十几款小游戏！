@@ -5,14 +5,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>命令之alias添加ll - tico_zl</title>
+    <title>Mac隐藏彩蛋，居然自带十几款小游戏！ - tico_zl</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="TriDiamond Obsidian,"> 
-    <meta name="description" content="1、修改~/.bash_profile文件  vim ~/.bash_profile
-2、添加如下内容alias ll=&amp;#39;ls -alF&amp;#39;
-alias la=&amp;#39;ls -A&amp;#,"> 
+    <meta name="description" content="Tico&#39;s blog,相信很多用过 Windows 系统的伙伴们对于它自带的小游戏应该，不陌生吧在无聊的时候，还总是抱怨 macOS 为啥没有小游戏可以玩。说到这里，我就要为 macOS 喊冤了，其实人家也是有游戏的，数,"> 
     <meta name="author" content="tico"> 
     <link rel="alternative" href="atom.xml" title="tico_zl" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -45,7 +43,7 @@ alias la=&amp;#39;ls -A&amp;#,">
     <div class="navigation animated fadeIn fast delay-1s">
         <img id="home-icon" class="icon-home" src="/img/favicon.png" alt="" data-url="http://blog.liuzl.cn">
         <div id="play-icon" title="Play/Pause" class="iconfont icon-play"></div>
-        <h3 class="subtitle">命令之alias添加ll</h3>
+        <h3 class="subtitle">Mac隐藏彩蛋，居然自带十几款小游戏！</h3>
         <div class="social">
             <!--        <div class="like-icon">-->
             <!--            <a href="javascript:;" target="_blank" rel="noopener" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
@@ -70,7 +68,7 @@ alias la=&amp;#39;ls -A&amp;#,">
             animation-duration: 1.2s;
             background-image: 
                 radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.65), #100e17),
-                url(/img/os/00001_mac_catalina.png);">
+                url(https://images.pexels.com/photos/2473183/pexels-photo-2473183.jpeg?cs=srgb&dl=black-macbook-pro-2473183.jpg&fm=jpg);">
         </div>
         <div class="else">
             <p class="animated fadeInDown">
@@ -80,20 +78,20 @@ alias la=&amp;#39;ls -A&amp;#,">
                 
                 十一月 26, 2019
             </p>
-            <h3 class="post-title animated fadeInDown"><a href="/2019/11/26/mac/%E5%91%BD%E4%BB%A4%E4%B9%8Balias%E6%B7%BB%E5%8A%A0ll/" title="命令之alias添加ll" class="">命令之alias添加ll</a>
+            <h3 class="post-title animated fadeInDown"><a href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/macOS/mac/Mac%E9%9A%90%E8%97%8F%E5%BD%A9%E8%9B%8B%EF%BC%8C%E5%B1%85%E7%84%B6%E8%87%AA%E5%B8%A6%E5%8D%81%E5%87%A0%E6%AC%BE%E5%B0%8F%E6%B8%B8%E6%88%8F%EF%BC%81" title="Mac隐藏彩蛋，居然自带十几款小游戏！" class="">Mac隐藏彩蛋，居然自带十几款小游戏！</a>
             </h3>
             
             <p class="post-count animated fadeInDown">
                 
                 <span>
                     <b class="iconfont icon-text2"></b> <i>文章字数</i>
-                    637
+                    3.8k
                 </span>
                 
                 
                 <span>
                     <b class="iconfont icon-timer__s"></b> <i>阅读约需</i>
-                    1 mins.
+                    3 mins.
                 </span>
                 
                 
@@ -127,12 +125,34 @@ alias la=&amp;#39;ls -A&amp;#,">
 <div class="article">
     <div class='main'>
         <div class="content markdown animated fadeIn">
-            <h1 id="1、修改-bash-profile文件"><a href="#1、修改-bash-profile文件" class="headerlink" title="1、修改~/.bash_profile文件"></a>1、修改~/.bash_profile文件</h1><pre><code class="bash">  vim ~/.bash_profile</code></pre>
-<h1 id="2、添加如下内容"><a href="#2、添加如下内容" class="headerlink" title="2、添加如下内容"></a>2、添加如下内容</h1><pre><code class="bash">alias ll=&#39;ls -alF&#39;
-alias la=&#39;ls -A&#39;
-alias l=&#39;ls -CF&#39;</code></pre>
-<h1 id="3、重新加载资源"><a href="#3、重新加载资源" class="headerlink" title="3、重新加载资源"></a>3、重新加载资源</h1><pre><code class="bash">source ~/.bash_profile</code></pre>
-<h1 id="4、OVER"><a href="#4、OVER" class="headerlink" title="4、OVER"></a>4、OVER</h1>
+            <p>相信很多用过 Windows 系统的伙伴们对于它自带的小游戏应该，不陌生吧<del>在无聊的时候，还总是抱怨 macOS 为啥没有小游戏可以玩。说到这里，我就要为 macOS 喊冤了，其实人家也是有游戏的，数量还比 Windows 多多了</del></p>
+<p>主要是这些小游戏不是以应用的方式存在，而是预装在 emacs 这个编辑器下面，而 emacs 是 Mac 内置的，所以一般情况下是看不见这些小游戏的。那既然这样，我们要如何启动这些小游戏呢？其实也很简单，现在废鱼就来一步一步教大家。</p>
+<h3 id="如何查看游戏名称列表？"><a href="#如何查看游戏名称列表？" class="headerlink" title="如何查看游戏名称列表？"></a>如何查看游戏名称列表？</h3><p>打开终端，在终端窗口输入以下命令</p>
+<blockquote>
+<p><em>ls /usr/share/emacs/22.1/lisp/play</em></p>
+</blockquote>
+<p><a href="https://static.skyandroid.cn/images/data/20180627/1530082205341153.jpeg" target="_blank" rel="noopener"><img src="https://upload-images.jianshu.io/upload_images/13144183-f1fe1b0c4a84b5a7?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="01.jpg" title="1530082205341153.jpeg"></a> </p>
+<p>点击回车后，就能看到游戏的名称列表了，表中 elc 文件的文件名便是游戏名称。</p>
+<p><a href="https://static.skyandroid.cn/images/data/20180627/1530082243523943.jpeg" target="_blank" rel="noopener"><img src="https://upload-images.jianshu.io/upload_images/13144183-cdf7ad1754b198c9?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="02.jpg" title="1530082243523943.jpeg"></a> </p>
+<h3 id="如何启动游戏"><a href="#如何启动游戏" class="headerlink" title="如何启动游戏"></a>如何启动游戏</h3><p>在终端输入以下命令</p>
+<blockquote>
+<p><em>emacs</em></p>
+</blockquote>
+<p><a href="https://static.skyandroid.cn/images/data/20180627/1530082375409738.jpeg" target="_blank" rel="noopener"><img src="https://upload-images.jianshu.io/upload_images/13144183-af49a150c735ebb3?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="03.jpg" title="1530082375409738.jpeg"></a> </p>
+<p>敲回车，出现如图所示</p>
+<p><a href="https://static.skyandroid.cn/images/data/20180627/1530082422504222.jpeg" target="_blank" rel="noopener"><img src="https://upload-images.jianshu.io/upload_images/13144183-a00384838a6a0148?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="04.jpg" title="1530082422504222.jpeg"></a> </p>
+<p><a href="https://static.skyandroid.cn/images/data/20180627/1530082443738129.jpeg" target="_blank" rel="noopener"><img src="https://upload-images.jianshu.io/upload_images/13144183-9577babf3280b0c1?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="05.jpg" title="1530082443738129.jpeg"></a> </p>
+<p>按键盘上的 esc+X 键，窗口左下角会出现 M-x ；</p>
+<p><a href="https://static.skyandroid.cn/images/data/20180627/1530082565400577.jpeg" target="_blank" rel="noopener"><img src="https://upload-images.jianshu.io/upload_images/13144183-20cf4a18a34c9fda?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="06.jpg" title="1530082565400577.jpeg"></a> </p>
+<p>在 M-x 后面，输入游戏名称（如：snake - 贪吃蛇、tetris - 俄罗斯方块、gomoku - 五子棋），敲回车，即可开始 play 对应的小游戏！通过键盘上的上下左右键可以控制游戏；</p>
+<p><a href="https://static.skyandroid.cn/images/data/20180627/1530082593971895.jpeg" target="_blank" rel="noopener"><img src="https://upload-images.jianshu.io/upload_images/13144183-d1a3c33b8a40cd84?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="07.jpg" title="1530082593971895.jpeg"></a> </p>
+<p>游戏界面如下：</p>
+<p><a href="https://static.skyandroid.cn/images/data/20180627/1530082639479253.jpeg" target="_blank" rel="noopener"><img src="https://upload-images.jianshu.io/upload_images/13144183-c0b154b56771e34e?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="08.jpg" title="1530082639479253.jpeg"></a> </p>
+<p>如果你想换个游戏，按 esc + X 键，在 M-x 后面输入游戏名称，敲回车即可；</p>
+<p><a href="https://static.skyandroid.cn/images/data/20180627/1530082672386210.jpeg" target="_blank" rel="noopener"><img src="https://upload-images.jianshu.io/upload_images/13144183-48ea38d807943a8b?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="10.jpg" title="1530082672386210.jpeg"></a> </p>
+<p>这些小游戏的界面虽然小巧，不过无聊的时候拿来打发打发时间也是不错的哦~</p>
+<p>文章来源：<a href="https://www.macbl.com/article/tips/1493" target="_blank" rel="noopener">https://www.macbl.com/article/tips/1493</a></p>
+
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls"
                 data-autoplay="false">
@@ -182,7 +202,7 @@ alias l=&#39;ls -CF&#39;</code></pre>
             <div class="box sticky animated fadeInRight faster">
                 <div id="toc" class="subbox">
                     <h4>目录</h4>
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1、修改-bash-profile文件"><span class="toc-number">1.</span> <span class="toc-text">1、修改~/.bash_profile文件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2、添加如下内容"><span class="toc-number">2.</span> <span class="toc-text">2、添加如下内容</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3、重新加载资源"><span class="toc-number">3.</span> <span class="toc-text">3、重新加载资源</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4、OVER"><span class="toc-number">4.</span> <span class="toc-text">4、OVER</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#如何查看游戏名称列表？"><span class="toc-number">1.</span> <span class="toc-text">如何查看游戏名称列表？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#如何启动游戏"><span class="toc-number">2.</span> <span class="toc-text">如何启动游戏</span></a></li></ol>
                 </div>
             </div>
             

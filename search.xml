@@ -5,8 +5,8 @@
     
     <entry>
       <title>删除系统输入法</title>
-      <link href="/2019/11/26/mac/%E5%88%A0%E9%99%A4%E7%B3%BB%E7%BB%9F%E8%BE%93%E5%85%A5%E6%B3%95/"/>
-      <url>/2019/11/26/mac/%E5%88%A0%E9%99%A4%E7%B3%BB%E7%BB%9F%E8%BE%93%E5%85%A5%E6%B3%95/</url>
+      <link href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/macOS/mac/%E5%88%A0%E9%99%A4%E7%B3%BB%E7%BB%9F%E8%BE%93%E5%85%A5%E6%B3%95"/>
+      <url>/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/macOS/mac/%E5%88%A0%E9%99%A4%E7%B3%BB%E7%BB%9F%E8%BE%93%E5%85%A5%E6%B3%95</url>
       
         <content type="html"><![CDATA[<h1 id="一、概述"><a href="#一、概述" class="headerlink" title="一、概述"></a>一、概述</h1><p> mac系统的配置采用的plist文件，类似于xml。删除系统的输入发，需要找到输入法的配置文件，然后删除相关配置。</p><h1 id="二、操作"><a href="#二、操作" class="headerlink" title="二、操作"></a>二、操作</h1><h2 id="1-输入法的配置文件路径："><a href="#1-输入法的配置文件路径：" class="headerlink" title="1.输入法的配置文件路径："></a>1.输入法的配置文件路径：</h2><p><code>/Users/用户名/Library/Preferences/com.apple.HIToolbox.plist</code></p><h2 id="2-配置截图"><a href="#2-配置截图" class="headerlink" title="2.配置截图"></a>2.配置截图</h2><p><img src="https://upload-images.jianshu.io/upload_images/13144183-565c2639347bd000.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p><h2 id="3-备份文件，删除相关配置，重启电脑。"><a href="#3-备份文件，删除相关配置，重启电脑。" class="headerlink" title="3.备份文件，删除相关配置，重启电脑。"></a>3.备份文件，删除相关配置，重启电脑。</h2><h2 id="4-常见问题"><a href="#4-常见问题" class="headerlink" title="4.常见问题"></a>4.常见问题</h2><p>当重新电脑的后发现系统默认的输入还是在的，没有删除掉，此时需要再关闭下SIP安全设置。<br>关闭操作如下：</p><blockquote><p>1.重启 Mac，按住 Command+R 键直到 Apple logo 出现，进入 Recovery Mode<br>2.点击 Utilities -&gt; Terminal<br>3.在 Terminal 中输入 csrutil disable，之后回车<br>4.重启 Mac</p></blockquote><p><strong>这样 SIP 安全设置就关闭了，关闭后在重复一次上面步骤即可，要注意的是最后的在 Terminal 中输入 的命令时改为 csrutil enable即可</strong></p><h1 id="OVER！"><a href="#OVER！" class="headerlink" title="OVER！"></a>OVER！</h1>]]></content>
       
@@ -22,11 +22,11 @@
       
         <tags>
             
+            <tag> 操作系统 </tag>
+            
             <tag> macOS </tag>
             
             <tag> catalina </tag>
-            
-            <tag> 操作系统 </tag>
             
         </tags>
       
@@ -36,8 +36,8 @@
     
     <entry>
       <title>命令之alias添加ll</title>
-      <link href="/2019/11/26/mac/%E5%91%BD%E4%BB%A4%E4%B9%8Balias%E6%B7%BB%E5%8A%A0ll/"/>
-      <url>/2019/11/26/mac/%E5%91%BD%E4%BB%A4%E4%B9%8Balias%E6%B7%BB%E5%8A%A0ll/</url>
+      <link href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/macOS/mac/%E5%91%BD%E4%BB%A4%E4%B9%8Balias%E6%B7%BB%E5%8A%A0ll"/>
+      <url>/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/macOS/mac/%E5%91%BD%E4%BB%A4%E4%B9%8Balias%E6%B7%BB%E5%8A%A0ll</url>
       
         <content type="html"><![CDATA[<h1 id="1、修改-bash-profile文件"><a href="#1、修改-bash-profile文件" class="headerlink" title="1、修改~/.bash_profile文件"></a>1、修改~/.bash_profile文件</h1><pre><code class="bash">  vim ~/.bash_profile</code></pre><h1 id="2、添加如下内容"><a href="#2、添加如下内容" class="headerlink" title="2、添加如下内容"></a>2、添加如下内容</h1><pre><code class="bash">alias ll=&#39;ls -alF&#39;alias la=&#39;ls -A&#39;alias l=&#39;ls -CF&#39;</code></pre><h1 id="3、重新加载资源"><a href="#3、重新加载资源" class="headerlink" title="3、重新加载资源"></a>3、重新加载资源</h1><pre><code class="bash">source ~/.bash_profile</code></pre><h1 id="4、OVER"><a href="#4、OVER" class="headerlink" title="4、OVER"></a>4、OVER</h1>]]></content>
       
@@ -53,11 +53,11 @@
       
         <tags>
             
+            <tag> 操作系统 </tag>
+            
             <tag> macOS </tag>
             
             <tag> catalina </tag>
-            
-            <tag> 操作系统 </tag>
             
         </tags>
       
@@ -67,8 +67,8 @@
     
     <entry>
       <title>Mac隐藏彩蛋，居然自带十几款小游戏！</title>
-      <link href="/2019/11/26/mac/Mac%E9%9A%90%E8%97%8F%E5%BD%A9%E8%9B%8B%EF%BC%8C%E5%B1%85%E7%84%B6%E8%87%AA%E5%B8%A6%E5%8D%81%E5%87%A0%E6%AC%BE%E5%B0%8F%E6%B8%B8%E6%88%8F%EF%BC%81/"/>
-      <url>/2019/11/26/mac/Mac%E9%9A%90%E8%97%8F%E5%BD%A9%E8%9B%8B%EF%BC%8C%E5%B1%85%E7%84%B6%E8%87%AA%E5%B8%A6%E5%8D%81%E5%87%A0%E6%AC%BE%E5%B0%8F%E6%B8%B8%E6%88%8F%EF%BC%81/</url>
+      <link href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/macOS/mac/Mac%E9%9A%90%E8%97%8F%E5%BD%A9%E8%9B%8B%EF%BC%8C%E5%B1%85%E7%84%B6%E8%87%AA%E5%B8%A6%E5%8D%81%E5%87%A0%E6%AC%BE%E5%B0%8F%E6%B8%B8%E6%88%8F%EF%BC%81"/>
+      <url>/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/macOS/mac/Mac%E9%9A%90%E8%97%8F%E5%BD%A9%E8%9B%8B%EF%BC%8C%E5%B1%85%E7%84%B6%E8%87%AA%E5%B8%A6%E5%8D%81%E5%87%A0%E6%AC%BE%E5%B0%8F%E6%B8%B8%E6%88%8F%EF%BC%81</url>
       
         <content type="html"><![CDATA[<p>相信很多用过 Windows 系统的伙伴们对于它自带的小游戏应该，不陌生吧<del>在无聊的时候，还总是抱怨 macOS 为啥没有小游戏可以玩。说到这里，我就要为 macOS 喊冤了，其实人家也是有游戏的，数量还比 Windows 多多了</del></p><p>主要是这些小游戏不是以应用的方式存在，而是预装在 emacs 这个编辑器下面，而 emacs 是 Mac 内置的，所以一般情况下是看不见这些小游戏的。那既然这样，我们要如何启动这些小游戏呢？其实也很简单，现在废鱼就来一步一步教大家。</p><h3 id="如何查看游戏名称列表？"><a href="#如何查看游戏名称列表？" class="headerlink" title="如何查看游戏名称列表？"></a>如何查看游戏名称列表？</h3><p>打开终端，在终端窗口输入以下命令</p><blockquote><p><em>ls /usr/share/emacs/22.1/lisp/play</em></p></blockquote><p><a href="https://static.skyandroid.cn/images/data/20180627/1530082205341153.jpeg" target="_blank" rel="noopener"><img src="https://upload-images.jianshu.io/upload_images/13144183-f1fe1b0c4a84b5a7?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="01.jpg" title="1530082205341153.jpeg"></a> </p><p>点击回车后，就能看到游戏的名称列表了，表中 elc 文件的文件名便是游戏名称。</p><p><a href="https://static.skyandroid.cn/images/data/20180627/1530082243523943.jpeg" target="_blank" rel="noopener"><img src="https://upload-images.jianshu.io/upload_images/13144183-cdf7ad1754b198c9?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="02.jpg" title="1530082243523943.jpeg"></a> </p><h3 id="如何启动游戏"><a href="#如何启动游戏" class="headerlink" title="如何启动游戏"></a>如何启动游戏</h3><p>在终端输入以下命令</p><blockquote><p><em>emacs</em></p></blockquote><p><a href="https://static.skyandroid.cn/images/data/20180627/1530082375409738.jpeg" target="_blank" rel="noopener"><img src="https://upload-images.jianshu.io/upload_images/13144183-af49a150c735ebb3?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="03.jpg" title="1530082375409738.jpeg"></a> </p><p>敲回车，出现如图所示</p><p><a href="https://static.skyandroid.cn/images/data/20180627/1530082422504222.jpeg" target="_blank" rel="noopener"><img src="https://upload-images.jianshu.io/upload_images/13144183-a00384838a6a0148?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="04.jpg" title="1530082422504222.jpeg"></a> </p><p><a href="https://static.skyandroid.cn/images/data/20180627/1530082443738129.jpeg" target="_blank" rel="noopener"><img src="https://upload-images.jianshu.io/upload_images/13144183-9577babf3280b0c1?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="05.jpg" title="1530082443738129.jpeg"></a> </p><p>按键盘上的 esc+X 键，窗口左下角会出现 M-x ；</p><p><a href="https://static.skyandroid.cn/images/data/20180627/1530082565400577.jpeg" target="_blank" rel="noopener"><img src="https://upload-images.jianshu.io/upload_images/13144183-20cf4a18a34c9fda?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="06.jpg" title="1530082565400577.jpeg"></a> </p><p>在 M-x 后面，输入游戏名称（如：snake - 贪吃蛇、tetris - 俄罗斯方块、gomoku - 五子棋），敲回车，即可开始 play 对应的小游戏！通过键盘上的上下左右键可以控制游戏；</p><p><a href="https://static.skyandroid.cn/images/data/20180627/1530082593971895.jpeg" target="_blank" rel="noopener"><img src="https://upload-images.jianshu.io/upload_images/13144183-d1a3c33b8a40cd84?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="07.jpg" title="1530082593971895.jpeg"></a> </p><p>游戏界面如下：</p><p><a href="https://static.skyandroid.cn/images/data/20180627/1530082639479253.jpeg" target="_blank" rel="noopener"><img src="https://upload-images.jianshu.io/upload_images/13144183-c0b154b56771e34e?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="08.jpg" title="1530082639479253.jpeg"></a> </p><p>如果你想换个游戏，按 esc + X 键，在 M-x 后面输入游戏名称，敲回车即可；</p><p><a href="https://static.skyandroid.cn/images/data/20180627/1530082672386210.jpeg" target="_blank" rel="noopener"><img src="https://upload-images.jianshu.io/upload_images/13144183-48ea38d807943a8b?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="10.jpg" title="1530082672386210.jpeg"></a> </p><p>这些小游戏的界面虽然小巧，不过无聊的时候拿来打发打发时间也是不错的哦~</p><p>文章来源：<a href="https://www.macbl.com/article/tips/1493" target="_blank" rel="noopener">https://www.macbl.com/article/tips/1493</a></p>]]></content>
       
@@ -84,11 +84,11 @@
       
         <tags>
             
+            <tag> 操作系统 </tag>
+            
             <tag> macOS </tag>
             
             <tag> catalina </tag>
-            
-            <tag> 操作系统 </tag>
             
         </tags>
       
@@ -98,8 +98,8 @@
     
     <entry>
       <title>Git~将本地项目推送到远程仓库</title>
-      <link href="/2019/11/25/git/Git-%E5%B0%86%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE%E6%8E%A8%E9%80%81%E5%88%B0%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/"/>
-      <url>/2019/11/25/git/Git-%E5%B0%86%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE%E6%8E%A8%E9%80%81%E5%88%B0%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/</url>
+      <link href="/git/git/Git-%E5%B0%86%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE%E6%8E%A8%E9%80%81%E5%88%B0%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93"/>
+      <url>/git/git/Git-%E5%B0%86%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE%E6%8E%A8%E9%80%81%E5%88%B0%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93</url>
       
         <content type="html"><![CDATA[<h1 id="Git-将本地项目推送到远程仓库"><a href="#Git-将本地项目推送到远程仓库" class="headerlink" title="Git~将本地项目推送到远程仓库"></a>Git~将本地项目推送到远程仓库</h1><p>0、前言</p><p>如果应经有远程仓库和本地仓库，那么本地仓库和远程仓库实际上是独立的两个仓库，这个时候就需要将两个仓库的历史进行合并后再push。</p><h2 id="1、进入本地项目目录，将当前目录初始化git"><a href="#1、进入本地项目目录，将当前目录初始化git" class="headerlink" title="1、进入本地项目目录，将当前目录初始化git"></a>1、进入本地项目目录，将当前目录初始化git</h2><pre><code class="shell">git init</code></pre><h2 id="2、添加远程仓库地址"><a href="#2、添加远程仓库地址" class="headerlink" title="2、添加远程仓库地址"></a>2、添加远程仓库地址</h2><pre><code class="shell">git remote add origin https://gitee.com/tico-zl/arithmetic-leetcode.gitgit add . git commit -m &quot;first commit&quot;</code></pre><h2 id="3、合并两个独立启动仓库的历史-避免fatal-refusing-to-merge-unrelated-histories错误"><a href="#3、合并两个独立启动仓库的历史-避免fatal-refusing-to-merge-unrelated-histories错误" class="headerlink" title="3、合并两个独立启动仓库的历史, 避免fatal: refusing to merge unrelated histories错误"></a>3、合并两个独立启动仓库的历史, 避免<code>fatal: refusing to merge unrelated histories</code>错误</h2><pre><code class="shell">git pull origin master --allow-unrelated-histories</code></pre><h2 id="4、最后push"><a href="#4、最后push" class="headerlink" title="4、最后push"></a>4、最后push</h2><pre><code class="shell"># git push --set-upstream &lt;远程主机名&gt; &lt;本地分支名&gt;:&lt;远程分支名&gt;git push --set-upstream origin master:master</code></pre>]]></content>
       
@@ -125,8 +125,8 @@
     
     <entry>
       <title>Git~根据远程仓库a的tag,创建分支master,然后推到远程仓库b</title>
-      <link href="/2019/11/25/git/Git-%E6%A0%B9%E6%8D%AE%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93a%E7%9A%84tag-%E5%88%9B%E5%BB%BA%E5%88%86%E6%94%AFmaster-%E7%84%B6%E5%90%8E%E6%8E%A8%E5%88%B0%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93b/"/>
-      <url>/2019/11/25/git/Git-%E6%A0%B9%E6%8D%AE%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93a%E7%9A%84tag-%E5%88%9B%E5%BB%BA%E5%88%86%E6%94%AFmaster-%E7%84%B6%E5%90%8E%E6%8E%A8%E5%88%B0%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93b/</url>
+      <link href="/git/git/Git-%E6%A0%B9%E6%8D%AE%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93a%E7%9A%84tag-%E5%88%9B%E5%BB%BA%E5%88%86%E6%94%AFmaster-%E7%84%B6%E5%90%8E%E6%8E%A8%E5%88%B0%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93b"/>
+      <url>/git/git/Git-%E6%A0%B9%E6%8D%AE%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93a%E7%9A%84tag-%E5%88%9B%E5%BB%BA%E5%88%86%E6%94%AFmaster-%E7%84%B6%E5%90%8E%E6%8E%A8%E5%88%B0%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93b</url>
       
         <content type="html"><![CDATA[<p>1、将仓库a的克隆下来</p><pre><code class="shell">git clone https://gitlab.tico.com/test/a.git</code></pre><p>2、更新获取tag</p><pre><code class="shell"># 切换到a项目目录cd a# 更新远程taggit fetch origin tag v1.0</code></pre><p>3、将tag 1.0v 创建为branch分支</p><pre><code class="shell">git branch master v1.0# 切换创建好的分支git ck master</code></pre><p>4、最后将a远程地址改为b的地址</p><pre><code class="shell"># 修改远程地址git remote set-url origin https://newgitlab.tico.com/test/b.git# 将代码推到远程仓库b上git push --set-upstream origin master</code></pre><p> 5、小结<br>通过:<code>git branch &lt;new-branch-name&gt; &lt;tag-name&gt;</code> 会根据tag创建新的分支.<br>例如:<code>git branch newbranch v1.0</code> . 会以tag <code>v1.0</code>创建新的分支<code>newbranch</code>;</p>]]></content>
       
@@ -152,8 +152,8 @@
     
     <entry>
       <title>Git~回退到某个历史版本</title>
-      <link href="/2019/11/25/git/Git-%E5%9B%9E%E9%80%80%E5%88%B0%E6%9F%90%E4%B8%AA%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC/"/>
-      <url>/2019/11/25/git/Git-%E5%9B%9E%E9%80%80%E5%88%B0%E6%9F%90%E4%B8%AA%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC/</url>
+      <link href="/git/git/Git-%E5%9B%9E%E9%80%80%E5%88%B0%E6%9F%90%E4%B8%AA%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC"/>
+      <url>/git/git/Git-%E5%9B%9E%E9%80%80%E5%88%B0%E6%9F%90%E4%B8%AA%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC</url>
       
         <content type="html"><![CDATA[<p><code>只需要两个步骤：</code></p><p>一、回退到某个版本命令</p><pre><code class="shell">git reset --hard 139dcfaa558e3276b30b6b2e5cbbb9c00bbdca96</code></pre><p>二、强制提交到branch-name分支(origin为远程服务器)</p><pre><code class="shell">git push -f -u origin branch-name</code></pre>]]></content>
       
@@ -179,8 +179,8 @@
     
     <entry>
       <title>centos7常用性能监控命令</title>
-      <link href="/2018/10/21/linux/centos7%E5%B8%B8%E7%94%A8%E6%80%A7%E8%83%BD%E7%9B%91%E6%8E%A7%E5%91%BD%E4%BB%A4/"/>
-      <url>/2018/10/21/linux/centos7%E5%B8%B8%E7%94%A8%E6%80%A7%E8%83%BD%E7%9B%91%E6%8E%A7%E5%91%BD%E4%BB%A4/</url>
+      <link href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/centos/linux/centos7%E5%B8%B8%E7%94%A8%E6%80%A7%E8%83%BD%E7%9B%91%E6%8E%A7%E5%91%BD%E4%BB%A4"/>
+      <url>/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/centos/linux/centos7%E5%B8%B8%E7%94%A8%E6%80%A7%E8%83%BD%E7%9B%91%E6%8E%A7%E5%91%BD%E4%BB%A4</url>
       
         <content type="html"><![CDATA[<p>查看CPU利用率：</p><pre><code class="shell">top# 键入一下字母效果#  z：高亮显示颜色#  M：按内存使用量排序#  N：按进程号排序</code></pre><p>查看CPU信息：</p><pre><code class="shell">lscpu</code></pre><p>查看内存信息：</p><pre><code class="shell">free  -m</code></pre><p>查看磁盘信息：</p><pre><code class="shell">df  -h</code></pre><p>查看进程信息：</p><pre><code class="shell">ps  -aux</code></pre><p>查看端口信息：</p><pre><code class="shell">netstat  -nutlp</code></pre><p>统计目录所用空间：</p><pre><code class="shell">du  -sh  /root</code></pre><p>统计文件总共有多少行：</p><pre><code class="shell">wc  -l</code></pre>]]></content>
       
@@ -196,13 +196,13 @@
       
         <tags>
             
-            <tag> 操作系统 </tag>
-            
             <tag> linux </tag>
             
             <tag> centos7 </tag>
             
             <tag> centos </tag>
+            
+            <tag> 操作系统 </tag>
             
         </tags>
       
@@ -212,8 +212,8 @@
     
     <entry>
       <title>centos7开放及查看端口</title>
-      <link href="/2018/01/26/linux/centos7%E5%BC%80%E6%94%BE%E5%8F%8A%E6%9F%A5%E7%9C%8B%E7%AB%AF%E5%8F%A3/"/>
-      <url>/2018/01/26/linux/centos7%E5%BC%80%E6%94%BE%E5%8F%8A%E6%9F%A5%E7%9C%8B%E7%AB%AF%E5%8F%A3/</url>
+      <link href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/centos/linux/centos7%E5%BC%80%E6%94%BE%E5%8F%8A%E6%9F%A5%E7%9C%8B%E7%AB%AF%E5%8F%A3"/>
+      <url>/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/centos/linux/centos7%E5%BC%80%E6%94%BE%E5%8F%8A%E6%9F%A5%E7%9C%8B%E7%AB%AF%E5%8F%A3</url>
       
         <content type="html"><![CDATA[<h2 id="端口操作的方法如下："><a href="#端口操作的方法如下：" class="headerlink" title="端口操作的方法如下："></a>端口操作的方法如下：</h2><h3 id="1、开放端口"><a href="#1、开放端口" class="headerlink" title="1、开放端口"></a>1、开放端口</h3><p><code>firewall-cmd --zone=public --add-port=80/tcp --permanent</code><br>返回success为成功</p><blockquote><p>命令含义：<br>–zone #作用域<br>–add-port=80/tcp #添加端口，格式为：端口/通讯协议<br>–permanent #永久生效</p></blockquote><h3 id="2、重新载入"><a href="#2、重新载入" class="headerlink" title="2、重新载入"></a>2、重新载入</h3><p><code>firewall-cmd --reload</code></p><h3 id="3、查看"><a href="#3、查看" class="headerlink" title="3、查看"></a>3、查看</h3><p><code>firewall-cmd --zone= public --query-port=80/tcp</code></p><h3 id="4、删除"><a href="#4、删除" class="headerlink" title="4、删除"></a>4、删除</h3><p><code>firewall-cmd --zone= public --remove-port=80/tcp --permanent</code></p><h2 id="重启防火墙："><a href="#重启防火墙：" class="headerlink" title="重启防火墙："></a>重启防火墙：</h2><p><code>systemctl restart firewalld.service</code></p><h2 id="关闭防火墙："><a href="#关闭防火墙：" class="headerlink" title="关闭防火墙："></a>关闭防火墙：</h2><p><code>systemctl stop firewalld.service</code></p><h2 id="查看监听-Listen-的端口"><a href="#查看监听-Listen-的端口" class="headerlink" title="查看监听(Listen)的端口"></a>查看监听(Listen)的端口</h2><p><code>netstat -lntp</code></p><h2 id="检查端口被哪个进程占用"><a href="#检查端口被哪个进程占用" class="headerlink" title="检查端口被哪个进程占用"></a>检查端口被哪个进程占用</h2><p><code>netstat -lnp|grep 8080</code></p><h2 id="查看状态"><a href="#查看状态" class="headerlink" title="查看状态"></a>查看状态</h2><p><code>systemctl status firewalld</code> </p><h2 id="开机禁用-启用"><a href="#开机禁用-启用" class="headerlink" title="开机禁用/启用"></a>开机禁用/启用</h2><p><code>systemctl disable/enable firewalld</code></p>]]></content>
       
@@ -229,13 +229,13 @@
       
         <tags>
             
-            <tag> 操作系统 </tag>
-            
             <tag> linux </tag>
             
             <tag> centos7 </tag>
             
             <tag> centos </tag>
+            
+            <tag> 操作系统 </tag>
             
         </tags>
       
