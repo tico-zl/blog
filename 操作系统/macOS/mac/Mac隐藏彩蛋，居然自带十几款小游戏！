@@ -191,7 +191,7 @@
                     </dl>
                 </div>
                 <ul>
-                    <li><a href="/">8 <p>文章</p></a></li>
+                    <li><a href="/">10 <p>文章</p></a></li>
                     <li><a href="/categories">4 <p>分类</p></a></li>
                     <li><a href="/tags">8 <p>标签</p></a></li>
                 </ul>
@@ -220,6 +220,9 @@
     </div>
 </body>
 <footer>
+    <p class="copyright" id="copyright">
+        备案： <a href="http://www.beian.miit.gov.cn/" title="Hexo" target="_blank" rel="noopener">京ICP备19059239号</a>
+    </p>
     <p class="copyright" id="copyright">
         &copy; 2019
         <span class="gradient-text">

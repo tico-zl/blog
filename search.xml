@@ -4,6 +4,60 @@
   
     
     <entry>
+      <title>Git~rebase</title>
+      <link href="/git/git/Git~rebase"/>
+      <url>/git/git/Git~rebase</url>
+      
+        <content type="html"><![CDATA[<style>  .item-center {margin: 0 auto;}  .h1 {font-size: 24px;}</style><div class="item-center h1">git rebase</div><h1 id="rebase简介"><a href="#rebase简介" class="headerlink" title="rebase简介"></a>rebase简介</h1><p>rebase, 意思为变基，即改变分支的的根支。提到rebase就不得不说说merge，他们两个都可以完成相同的的工作（结果），将两个分支进行合并，但他们工作方式完全不同。</p><p>merge和rebase最大的不同，merge会保留所有的提交历史记录，而rebase会删除基变分支的历史记录，如下图所示。</p><p>merge工作方式图：</p><p><img src="https://upload-images.jianshu.io/upload_images/13144183-a11f9b358328894f.png" alt="merge"></p><p>rebase工作方式图：    </p><p><img src="https://upload-images.jianshu.io/upload_images/13144183-2ff3fab7651fd0b1.png" alt="rebase"></p><h1 id="rebase的基本操作"><a href="#rebase的基本操作" class="headerlink" title="rebase的基本操作"></a>rebase的基本操作</h1><pre><code class="bash"># #              C5---C6---C7 dev1#             /#       C1---C2---C3---C4 devgit rebase dev#                     A&#39;--B&#39;--C&#39; dev1#                    /#       D---E---F---G dev# 在 rebase 的过程中，也许会出现冲突 conflict 。在这种情况， git 会停止 rebase 并会让你去解决冲突。在解决完冲突后，用 git add 命令去更新这些内容。# 注意，你无需执行 git-commit，只要执行 continuegit rebase --continue# 这样 git 会继续应用余下的 patch 补丁文件。# 在任何时候，我们都可以用 --abort 参数来终止 rebase 的行动，并且分支会回到 rebase 开始前的状态。git rebase —abort</code></pre><h1 id="rebase的另一种操作：合并分支"><a href="#rebase的另一种操作：合并分支" class="headerlink" title="rebase的另一种操作：合并分支"></a>rebase的另一种操作：合并分支</h1><p>命令：</p><pre><code class="bash">git rebase -i HEAD~3</code></pre><p>上面命令的意思是合并最近的 4 次提交纪录。</p><pre><code class="bash"># 进入编辑模式p 9abd07c add bbbs 16981e9 add cccs e0f8d72 add d# Rebase 7e215b2..e0f8d72 onto 7e215b2 (3 commands)## Commands:# p, pick &lt;commit&gt; = use commit# r, reword &lt;commit&gt; = use commit, but edit the commit message# e, edit &lt;commit&gt; = use commit, but stop for amending# s, squash &lt;commit&gt; = use commit, but meld into previous commit# f, fixup &lt;commit&gt; = like &quot;squash&quot;, but discard this commit&#39;s log message# x, exec &lt;command&gt; = run command (the rest of the line) using shell# b, break = stop here (continue rebase later with &#39;git rebase --continue&#39;)# d, drop &lt;commit&gt; = remove commit# l, label &lt;label&gt; = label current HEAD with a name# t, reset &lt;label&gt; = reset HEAD to a label# m, merge [-C &lt;commit&gt; | -c &lt;commit&gt;] &lt;label&gt; [# &lt;oneline&gt;]# .       create a merge commit using the original merge commit&#39;s# .       message (or the oneline, if no original merge commit was# .       specified). Use -c &lt;commit&gt; to reword the commit message.## These lines can be re-ordered; they are executed from top to bottom.## If you remove a line here THAT COMMIT WILL BE LOST.## However, if you remove everything, the rebase will be aborted.#</code></pre><p>如果你异常退出了 <code>vim</code> 窗口，可以执行</p><pre><code class="bash">git rebase --edit-todo</code></pre><p>这时候会一直处在这个编辑的模式里，我们可以回去继续编辑，修改完保存一下：</p><pre><code class="bash">git rebase --continue</code></pre><h1 id="rebase最佳实践"><a href="#rebase最佳实践" class="headerlink" title="rebase最佳实践"></a>rebase最佳实践</h1><ul><li>不要对master分支进行rebase</li><li>一般来说，执行rebase的分支都是自己本地的分支，没有推送到远程版本库</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> git </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> git </tag>
+            
+            <tag> 版本控制 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Git~笔记</title>
+      <link href="/git/git/Git~%E7%AC%94%E8%AE%B0"/>
+      <url>/git/git/Git~%E7%AC%94%E8%AE%B0</url>
+      
+        <content type="html"><![CDATA[<style>  .item-center {margin: 0 auto;}  .h1 {font-size: 24px;}</style><div class="item-center h1">git笔记</div><p><code>git push -u|--set-upstream origin master</code></p><p>-u, –set-upstream : 见本地分支和远程master分支进行关联，下次提交远程直接<code>git push</code></p><p><code>git remote show</code></p><p>查看当前分支关联的远程仓库，显示远程仓库的别名。</p><pre><code class="bash">git1(master): git remote show               origin    </code></pre><p><code>git remote show &lt;远程仓库别名&gt;</code></p><p>查看远程仓库详细信息。</p><pre><code class="bash">git1(master): git remote show origin* remote origin  Fetch URL: https://github.com/tico-zl/gitpractice.git  Push  URL: https://github.com/tico-zl/gitpractice.git  HEAD branch: master  Remote branch:    master tracked  Local branch configured for &#39;git pull&#39;:    master merges with remote master  Local ref configured for &#39;git push&#39;:    master pushes to master (up to date)</code></pre><p><code>git reset HEAD &lt;file&gt;...</code></p><p>将加入到缓存区的文件移出</p><p><code>git ckeckout -b &lt;develop&gt;</code></p><p>创建分支develop并切换到该分支上。此时的develop分支只是存在于本地仓库，如果想将develop分支推送到远程仓库还需要执行git push –set-upstream|-u origin develop命令，表示与远程分支进行关联</p><pre><code class="bash">git1(develop) ✗: git push      fatal: The current branch develop has no upstream branch.To push the current branch and set the remote as upstream, use    git push --set-upstream origin developgit1(develop) ✗: git push --set-upstream origin develop      Total 0 (delta 0), reused 0 (delta 0)remote: remote: Create a pull request for &#39;develop&#39; on GitHub by visiting:remote:      https://github.com/tico-zl/gitpractice/pull/new/developremote: To github.com:tico-zl/gitpractice.git * [new branch]      develop -&gt; developBranch &#39;develop&#39; set up to track remote branch &#39;develop&#39; from &#39;origin&#39;.git1(develop) ✗: git push                              Everything up-to-date</code></pre><p><code>git config --global alias.&lt;br&gt; [!]branch</code></p><p>为命令配置别名，如上命令执行后，git br 就等同于git branch。命令前面加“！”表示执行一个外部命令。全局的配置会写到~/.gitconfig文件中</p><pre><code class="bash">git config --global alias.br branchgit config --global alias.ui &#39;!gitk&#39;# 文件.gitconfig[alias]    st = status    last = log -1    lg = log --color --graph --pretty=format:&#39;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset&#39; --abbrev-commit    ck = checkout    br = branch    commitm = commit    adds = add    ui = !gitk</code></pre><p><code>git ckeckout -b develop origin/develop | git ckeckout --track origin/develop</code></p><p>这两个命令相同，表示创建本地分支develop并追踪远程分支origin/develop，然后切换到改分支。<em>第一个命令可以创建本地分支名和远程分支不一样的名字，eg:<strong><code>git ckeckout -b develop1 origin/develop</code></strong>表示创建本地分支develop1并追踪远程分支origin/develop</em></p><p><code>git rm &lt;file...&gt;</code></p><p>这个命令完成两个操作：1，将文件从磁盘中删除；2，将文件从暂存区中移除。</p><p><strong><code>git add .</code>和<code>git add</code>的区别</strong></p><p>“.”会考虑.gitignore文件，“*“会将所有文件都都加入暂存区中</p><p><strong>git合并原则：三方合并原则</strong></p><p><code>git push origin :develop | git push origin --delete develop</code></p><p>两个删除远程分支的命令。 第一个命令的完整命令为<code>git push origin srcBranch:destBranch</code>，意思为将本地分支推送到远程分支，如果将冒号前面的分支删除，意味着将本地一个空的分支推送到远程分支develop上，即为将其删除。</p><p><strong>git refspec详解</strong></p><p>1. push操作的完整命令是:git push origin srcBranchs:destBranch<br>2. pull操作的完整命令是：git pull oirigin srcBranchs:destBranch<br>3. HEAD标记：HEAD文件是一个指向你当前所在分支的引用标识符，该文件内部并不包含SHA-1值，而是一个指向另外一个引用的指针<br>4. 当执行 git commit命令时,git会创建一个commit对象,并且将这个commit对象的parent指针设置为HEAD所指向的引用的SHA-1值<br>5. 我们对于HEAD修改的任何操作,都会被 git reflog完整记录下来<br>6. 实际上,我们可以通过git底层命令symbolic-ref来实现对HEAD文件内容的修改</p><p><strong>git tag 标签</strong></p><p>有两种类型的标签，一种是轻量级，一种是带注释。</p><p>轻量级：只有一个对commitId的应用；</p><p>带注释：会生成一个对象，包含了一个引用、名字和注释说明。</p><p><code>git cherry-pick &lt;commitId&gt;</code></p><p>将</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> git </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> git </tag>
+            
+            <tag> 版本控制 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>删除系统输入法</title>
       <link href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/macOS/mac/%E5%88%A0%E9%99%A4%E7%B3%BB%E7%BB%9F%E8%BE%93%E5%85%A5%E6%B3%95"/>
       <url>/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/macOS/mac/%E5%88%A0%E9%99%A4%E7%B3%BB%E7%BB%9F%E8%BE%93%E5%85%A5%E6%B3%95</url>
@@ -22,11 +76,11 @@
       
         <tags>
             
+            <tag> 操作系统 </tag>
+            
             <tag> macOS </tag>
             
             <tag> catalina </tag>
-            
-            <tag> 操作系统 </tag>
             
         </tags>
       
@@ -53,11 +107,11 @@
       
         <tags>
             
+            <tag> 操作系统 </tag>
+            
             <tag> macOS </tag>
             
             <tag> catalina </tag>
-            
-            <tag> 操作系统 </tag>
             
         </tags>
       
@@ -84,11 +138,11 @@
       
         <tags>
             
+            <tag> 操作系统 </tag>
+            
             <tag> macOS </tag>
             
             <tag> catalina </tag>
-            
-            <tag> 操作系统 </tag>
             
         </tags>
       
@@ -196,13 +250,13 @@
       
         <tags>
             
-            <tag> 操作系统 </tag>
-            
             <tag> linux </tag>
             
             <tag> centos7 </tag>
             
             <tag> centos </tag>
+            
+            <tag> 操作系统 </tag>
             
         </tags>
       
@@ -229,13 +283,13 @@
       
         <tags>
             
-            <tag> 操作系统 </tag>
-            
             <tag> linux </tag>
             
             <tag> centos7 </tag>
             
             <tag> centos </tag>
+            
+            <tag> 操作系统 </tag>
             
         </tags>
       
